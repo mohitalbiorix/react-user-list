@@ -1,0 +1,22 @@
+limitaton of jsx.
+
+* You can't return more than one root jsx element
+  because jsx only return one value. that caould be anything like div element or custom component.
+  
+* In bigger application, you can easily end up with tons of unnecessary <div>s (or other elements) which add no semantics meanning or structure
+to the page but are only there because of react's/jsx requirements.
+
+steps
+1. create a wrapper class
+
+2. react fragments
+
+React Fragment is a feature in React that allows you to return multiple elements from a React component by allowing you to group a list of children without adding extra nodes to the DOM. To return multiple elements from a React component, you'll need to wrap the element in a root element.
+
+using below syntax:
+<> ....  </>
+<React.Fragment> ....  <React.Fragment/>
+
+3. React Portal
+
+React Portals are an advanced concept that allows developers to render their elements outside the React hierarchy tree without comprising the parent-child relationship between components. Usually, typical React components are located within the DOM.
